@@ -1,6 +1,10 @@
+'use strict';
+
+console.log('\n==== SECOND LARGEST NUMBER ====');
+
 var arrayNum = [1,3,2,1,4,4,5];
 
-console.log(`Este es el aray: ${arrayNum}`);
+console.log(`This is the first array: ${arrayNum}`);
 
 const secondLargestNumber = (numbers) => {
     let first = numbers[0];
@@ -15,7 +19,8 @@ const secondLargestNumber = (numbers) => {
         }
     }
 
-    return [second, first];
+    // return [second, first];
+    return second;
 }
 
-console.log(secondLargestNumber(arrayNum));
+console.log(`The Second Largest number is: ${secondLargestNumber(arrayNum)}`);
