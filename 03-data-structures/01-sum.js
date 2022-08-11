@@ -21,7 +21,6 @@ console.log('\n==== SUM OF A RANGE ====');
 const range = (...args) => {
     let [start, end, sum] = args;
     let arr = [];
-    console.log(sum);
     if(!sum) {
         for (start; start <= end; start++) arr.push(start);
     } else if (sum > 0) {
