@@ -31,7 +31,7 @@ const reverseArray = (arr) => {
 const arrayValue = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ,11];
 const reverseArrayInPlace = (arr) => {
     for(let i = 0; i < Math.floor(arr.length / 2); i++) {
-        let current = arr[i]; // toma el primero
+        let current = arr[i]; // toma el primero y/o actual durante el ciclo
         arr[i] = arr[arr.length - 1 - i]; // toma el penultimo, en caso de la primer vuelta, se toma el ultimo y lo asigna al index actual
         arr[arr.length - 1 - i] = current; // coloca en el ultimo - index el indice actual
     }
